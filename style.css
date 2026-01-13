@@ -1,0 +1,92 @@
+/* Palette de couleurs Sup-Robot (à ajuster selon vos codes exacts) */
+:root {
+    --primary-blue: #0056b3;  /* Votre bleu */
+    --light-grey: #f4f4f4;
+    --text-dark: #333;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Style académique CNRS pour le texte */
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin: 0;
+    background-color: #fff;
+}
+
+h1, h2, h3, nav {
+    font-family: 'Helvetica', 'Arial', sans-serif; /* Sans-serif pour les titres */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Header style Sup-Robot */
+.main-header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.main-header .logo { height: 60px; }
+
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+
+/* Mise en page type CNRS */
+.content-article {
+    flex: 2;
+    min-width: 300px;
+    padding-right: 40px;
+}
+
+.article-header {
+    border-bottom: 3px solid var(--primary-blue);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.category {
+    color: var(--primary-blue);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h1 { font-size: 2.5rem; margin: 10px 0; color: #000; }
+
+.highlight-box {
+    background: var(--light-grey);
+    border-left: 5px solid var(--primary-blue);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+    border-left: 1px solid var(--border-color);
+    padding-left: 20px;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    border-bottom: 1px solid var(--border-color);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+    background: var(--light-grey);
+    border-top: 1px solid var(--border-color);
+} 
